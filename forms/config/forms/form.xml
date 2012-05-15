@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<forms>
+    <simpleForm>
+        <action>/forms/index/index/</action>
+        <method>post</method>
+        <id>simpleForm</id>
+        <name>simpleForm</name>
+        <class>simpleFormClass</class>
+        <enctype>application/x-www-form-urlencoded</enctype>
+        <accept-charset>UTF-8</accept-charset>
+        <lang>en</lang>
+        <accept>text/html</accept>
+        <style>border: 1px solid #ccc;padding: 15px;</style>
+        <title>Simple Form</title>
+        <target>_blank</target>
+        <onsubmit>javascript:alert('w00t');return true;</onsubmit>
+        <elements>
+            <name>
+                <type>text</type>
+                <options>
+                    <label>Name:</label>
+                    <size>30</size>
+                    <validators>
+                        <notempty>
+                            <validator>NotEmpty</validator>
+                            <options>
+                                <messages>
+                                    <isEmpty>A name is required</isEmpty>
+                                </messages>
+                            </options>
+                        </notempty>
+                    </validators>
+                    <required>true</required>
+                </options>
+            </name>
+            <submit>
+                <type>submit</type>
+                <ignore>true</ignore>
+                <options>
+                    <label>Process</label>
+                </options>
+            </submit>
+        </elements>
+    </simpleForm>
+</forms>
